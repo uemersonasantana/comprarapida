@@ -1,10 +1,13 @@
 
 
 -Arquivo style.css
+    -Mudar background do Body para: #E7E7E7;
 	-Body deve utilizar: font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 	-a:hover 
 		-Original = color: #f33535
 		-Atualizada = color: #1259c3
+    -Todos os efeitos hovers devem está com a cor: #1259c3
+        -Atualmente estão em vermelho.
 
 - Página Inicial
 	-Topo
@@ -14,14 +17,10 @@
 			-style="margin-top: -10px; padding: 0;"
 		-Ajustar atributo style do <nav id=sticky> para: 
 			-style="background: #FFF148 !important; border-bottom: 3px solid #3480FF;"  
-
 		-Adicionar id="btnPesquisar" no campo "¿Qué estás buscando?"
 		-Adicionar class"NOVO_logo" na tag <a href="https://compra-rapida.gnumux.com/"> e remova a tag img que se encontra dentro.
-
 	-Slide
 		-Definir altura style="height:340px;";
-
-	
 	-Adicionar <section>:
 		<section class="NOVO_payment-data MLB" type="NOVO_payment-data MLB">
             <div class="container">
