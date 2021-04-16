@@ -2207,9 +2207,10 @@
                         <h2>Nuevos productos</h2>
                     </div>
 
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6">
-                                <div class="card NOVO_slide_caixa_produtos">
+                    <div style="height:500px;">
+                    <div class="row" style="position:absolute;">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6" style="position:relative;">
+                                <div class="card NOVO_slide_caixa_produtos" style="position:relative;">
                                     <div class="icone_carrinho ui-item__shipping-free" title="Frete grátis">
                                         <svg class="ui-item__shipping-icon" viewBox="0 0 39 32"><path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
                                         </svg>
@@ -2242,62 +2243,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6">
-                                <div class="card NOVO_slide_caixa_produtos">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6" style="position:relative;">
+                                <div class="card NOVO_slide_caixa_produtos" style="position:relative;">
                                     <div class="icone_carrinho ui-item__shipping-free" title="Frete grátis">
                                         <svg class="ui-item__shipping-icon" viewBox="0 0 39 32"><path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
                                         </svg>
                                     </div>
                                     <figure>
                                         <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
-                                                                                                <img class="card-img p-4" src="https://compra-rapida.gnumux.com/komodo/img/Product/product.jpg" alt="" width="100%" />
-                                                                                    </a>
-
-                                    </figure>
-                                    <div class="card-body text-center" style="padding-top: 0;">
-
-                                                           
-                                        
-                                                            <h5 class="card-subtitle " style="font-weight: 700 !important;">
-                                                                            Gs. 2.277.000
-                                                                    </h5>
-                                                                    <span class="parcelamento">12x R$ 47,42 sem juros</span>
-                                        
-                                                            <!--<div class="text-stock br p-1" style="font-size: 10px;">
-                                                En stock
-                                            </div>-->
-
-                                        
-                                         <h4 class="card-title text-left" style="font-size: 12px !important;">
-                                            <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
-                                                    Apple TV MR912LZ/A A1625 FULL HD 32GB/HDMI/USB
-                                            </a>
-                                        </h4>
-                                        <h6 class="text-center text-lowercase mt-10" style="font-size: 10px;">
-                                            871853
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6">
-                                <div class="card NOVO_slide_caixa_produtos">
-                                    <div class="icone_carrinho ui-item__shipping-free" title="Frete grátis">
-                                        <svg class="ui-item__shipping-icon" viewBox="0 0 39 32"><path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
-                                        </svg>
-                                    </div>
-                                    <figure>
-                                        <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
-                                                                                                <img class="card-img p-4" src="https://compra-rapida.gnumux.com/komodo/img/Product/product.jpg" alt="" width="100%" />
-                                                                                    </a>
-
+                                            <img class="card-img p-4" src="https://compra-rapida.gnumux.com/komodo/img/Product/product.jpg" alt="" width="100%" />
+                                        </a>
                                     </figure>
                                     
-                                    <div class="card-body text-center" style="padding-top: 0;">
-
-                                                           
-                                        
-                                                            <h5 class="card-subtitle " style="font-weight: 700 !important;">
+                                    <div class="card-body text-center" style="padding-top: 0px;">
+                                        <h5 class="card-subtitle " style="font-weight: 700 !important;">
                                                                             Gs. 2.277.000
                                                                     </h5>
                                                                     <span class="parcelamento">12x R$ 47,42 sem juros</span>
@@ -2318,96 +2277,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6">
-                                <div class="card NOVO_slide_caixa_produtos">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6" style="position:relative;">
+                                <div class="card NOVO_slide_caixa_produtos" style="position:relative;">
                                     <div class="icone_carrinho ui-item__shipping-free" title="Frete grátis">
                                         <svg class="ui-item__shipping-icon" viewBox="0 0 39 32"><path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
                                         </svg>
                                     </div>
                                     <figure>
                                         <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
-                                                                                                <img class="card-img p-4" src="https://compra-rapida.gnumux.com/komodo/img/Product/product.jpg" alt="" width="100%" />
-                                                                                    </a>
-
+                                            <img class="card-img p-4" src="https://compra-rapida.gnumux.com/komodo/img/Product/product.jpg" alt="" width="100%" />
+                                        </a>
                                     </figure>
                                     
-                                    <div class="card-body text-center" style="padding-top: 0;">
-
-                                                           
-                                        
-                                                            <h5 class="card-subtitle " style="font-weight: 700 !important;">
-                                                                            Gs. 2.277.000
-                                                                    </h5>
-                                                                    <span class="parcelamento">12x R$ 47,42 sem juros</span>
-                                        
-                                                            <!--<div class="text-stock br p-1" style="font-size: 10px;">
-                                                En stock
-                                            </div>-->
-
-                                        
-                                         <h4 class="card-title text-left" style="font-size: 12px !important;">
-                                            <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
-                                                    Apple TV MR912LZ/A A1625 FULL HD 32GB/HDMI/USB
-                                            </a>
-                                        </h4>
-                                        <h6 class="text-center text-lowercase mt-10" style="font-size: 10px;">
-                                            871853
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div><div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6">
-                                <div class="card NOVO_slide_caixa_produtos">
-                                    <div class="icone_carrinho ui-item__shipping-free" title="Frete grátis">
-                                        <svg class="ui-item__shipping-icon" viewBox="0 0 39 32"><path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
-                                        </svg>
-                                    </div>
-                                    <figure>
-                                        <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
-                                                                                                <img class="card-img p-4" src="https://compra-rapida.gnumux.com/komodo/img/Product/product.jpg" alt="" width="100%" />
-                                                                                    </a>
-
-                                    </figure>
-                                    
-                                    <div class="card-body text-center" style="padding-top: 0;">
-
-                                                           
-                                        
-                                                            <h5 class="card-subtitle " style="font-weight: 700 !important;">
-                                                                            Gs. 2.277.000
-                                                                    </h5>
-                                                                    <span class="parcelamento">12x R$ 47,42 sem juros</span>
-                                        
-                                                            <!--<div class="text-stock br p-1" style="font-size: 10px;">
-                                                En stock
-                                            </div>-->
-
-                                        
-                                         <h4 class="card-title text-left" style="font-size: 12px !important;">
-                                            <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
-                                                    Apple TV MR912LZ/A A1625 FULL HD 32GB/HDMI/USB
-                                            </a>
-                                        </h4>
-                                        <h6 class="text-center text-lowercase mt-10" style="font-size: 10px;">
-                                            871853
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6">
-                                <div class="card NOVO_slide_caixa_produtos">
-                                    <div class="icone_carrinho ui-item__shipping-free" title="Frete grátis">
-                                        <svg class="ui-item__shipping-icon" viewBox="0 0 39 32"><path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
-                                        </svg>
-                                    </div>
-
-                                    <figure>
-                                        <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
-                                                                                                <img class="card-img p-4" src="https://compra-rapida.gnumux.com/komodo/img/Product/product.jpg" alt="" width="100%" />
-                                                                                    </a>
-
-                                    </figure>
-                                    
-                                    <div class="card-body text-center" style="padding-top: 0;">
+                                    <div class="card-body text-center" style="padding-top: 0px;">
                                         <h5 class="card-subtitle " style="font-weight: 700 !important;">
                                                                             Gs. 2.277.000
                                                                     </h5>
@@ -2418,7 +2300,7 @@
                                             </div>-->
 
                                         
-                                         <h4 class="card-title text-left" style="font-size: 12px !important;">
+                                         <h4 class="card-title text-center" style="font-size: 12px !important;">
                                             <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
                                                     Apple TV MR912LZ/A A1625 FULL HD 32GB/HDMI/USB
                                             </a>
@@ -2429,6 +2311,43 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6" style="position:relative;">
+                                <div class="card NOVO_slide_caixa_produtos" style="position:relative;">
+                                    <div class="icone_carrinho ui-item__shipping-free" title="Frete grátis">
+                                        <svg class="ui-item__shipping-icon" viewBox="0 0 39 32"><path d="M21.7 24q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h4.4v-7.5L30 10.3h-4.8V6.8h5.6q.5 0 .8.2t.6.5l6.2 7.4q.3 0 .4.3t0 .6v9.6q0 .7-.5 1.2t-1 .4h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3h-6q-.4 1.8-1.8 3t-3.2 1-3.3-1-1.7-3H1.7Q1 27.4.5 27T0 25.6V4q0-1.7 1.2-2.8T4 0h17.2q1.6 0 2.8 1.2T25.2 4v14.3h-3.5V4q0-.2-.2-.4t-.3-.2H4q-.3 0-.4.2t-.2.4v20h2.3q.6-1.3 2-2t2.6-.8q1.5 0 2.7.7t2 2h6.7zm4.6 4q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3-1.2.5-.3 1.3.5 1.2 1.3.5zm-16 0q.7 0 1.2-.5t.5-1.2-.5-1.2-1.2-.3T9 25t-.4 1.3.5 1.2 1.4.5z"></path>
+                                        </svg>
+                                    </div>
+                                    <figure>
+                                        <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
+                                            <img class="card-img p-4" src="https://compra-rapida.gnumux.com/komodo/img/Product/product.jpg" alt="" width="100%" />
+                                        </a>
+                                    </figure>
+                                    
+                                    <div class="card-body text-center" style="padding-top: 0px;">
+                                        <h5 class="card-subtitle " style="font-weight: 700 !important;">
+                                                                            Gs. 2.277.000
+                                                                    </h5>
+                                                                    <span class="parcelamento">12x R$ 47,42 sem juros</span>
+                                        
+                                                            <!--<div class="text-stock br p-1" style="font-size: 10px;">
+                                                En stock
+                                            </div>-->
+
+                                        
+                                         <h4 class="card-title text-center" style="font-size: 12px !important;">
+                                            <a href="https://compra-rapida.gnumux.com/p/3/apple-tv-1">
+                                                    Apple TV MR912LZ/A A1625 FULL HD 32GB/HDMI/USB
+                                            </a>
+                                        </h4>
+                                        <h6 class="text-center text-lowercase mt-10" style="font-size: 10px;">
+                                            871853
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                    </div>
                     </div>
                 </div>
             </div>

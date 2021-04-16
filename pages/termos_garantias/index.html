@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Grid Template · Bootstrap v5.0</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/grid/">
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      @font-face {
+          font-family: 'Proxima Nova';
+          font-weight: 300;
+          font-display: swap;
+          font-style: normal;
+          src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.ttf) format("truetype")
+      }
+      @font-face {
+          font-family: 'Proxima Nova';
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+          src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.ttf) format("truetype")
+      }
+      @font-face {
+          font-family: 'Proxima Nova';
+          font-weight: 600;
+          font-display: swap;
+          font-style: normal;
+          src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.ttf) format("truetype")
+      }
+    </style>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+  </head>
+  <body class="py-4" style="font-family:Proxima Nova!important;">
+    
+<main>
+  <div class="container">
+
+    <h1>Bootstrap grid examples</h1>
+    <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+    <div class="row mb-2 caixa">
+      <div class="col-md-6 themed-grid-col sub_caixa">
+        
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/telefone.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Celulares</div>
+              <div class="texto">Apple: 1 Año</div>
+              <div class="texto">Otras marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">
+        
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/smart.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Reloj Inteligente</div>
+              <div class="texto">Apple/Garmin: 1 Año</div>
+              <div class="texto">Otras marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">
+        
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/cameras.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo3">Cámaras y Filmadoras</div>
+              <div class="texto2">Canon/Sony: 1 Año</div>
+              <div class="texto2">Otras marcas: 3 Meses</div>
+              <div class="texto2">Flash y Accesorios: 3 meses</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/pc.png" width="110" />
+            </div>
+            <div class="col" style="text-align:center;">
+              <div class="titulo">Informática</div>
+              <div class="texto3">Memorias DDR, Procesadores, Coolers, Placas madre y VGA, Discos externos e internos, SSD, Monitores, Impresoras, Teclados, Mouse, Gabinetes, Memorias y Pendrives, Modem, Routers:
+                3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/notebook.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Notebooks</div>
+              <div class="texto">Apple: 1 Año</div>
+              <div class="texto">Otras marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/tablet.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Tabletas</div>
+              <div class="texto">Apple: 1 Año</div>
+              <div class="texto">Otras marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/hoby.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Drones</div>
+              <div class="texto">Todas las marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/estabilizador.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Estabilizadores</div>
+              <div class="texto">Todas las marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/games.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Consolas</div>
+              <div class="texto">Todas las marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/tv.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo2">TV y Cine en Casa</div>
+              <div class="texto">Todas las Marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Proyectores</div>
+              <div class="texto">Todas las Marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/receptor.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo3">Reproductores Multimedia</div>
+              <div class="texto2">Apple TV: 1 Año</div>
+              <div class="texto2">Chromecast/ Otras marcas:  3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/smart img.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Speakers</div>
+              <div class="texto">Sony: 1 Año</div>
+              <div class="texto">Otras marcas:  3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/multimidia.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo2">Audio para Autos</div>
+              <div class="texto">Todas las Marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/gps.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">GPS</div>
+              <div class="texto">Todas las marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/bolsas.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo2">Mochilas y Estuches</div>
+              <div class="texto">Case Logic/Thule: 1 Año</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/ .png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Auriculares</div>
+              <div class="texto">Sony: 1 Año</div>
+              <div class="texto">Otras marcas: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/calculador.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo">Calculadoras</div>
+              <div class="texto">3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        <div class="container">
+          <div class="row" style="padding: 5px 0 20px 0;">
+            <div class="col">
+              <img src="png/eletrodomesticos.png" width="110" />
+            </div>
+            <div class="col" style="padding-top: 10px;text-align:center;">
+              <div class="titulo2">Electrónicos Varios</div>
+              <div class="texto2">Gafas RV, Receptores, Barbeadores, Baby Call, Scooters, Azamerica y Accesorios en General: 3 Meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 themed-grid-col sub_caixa">   
+        
+      </div>
+
+      <!--<hr style="margin: 40px 0 40px 0;">-->
+
+      <div class="col-md-6 themed-grid-col">.col-md-4</div>
+      <div class="col-md-6 themed-grid-col">.col-md-4</div>
+      <!--<div class="col-md-4 themed-grid-col">.col-md-4</div>-->
+    </div>
+  </div>
+</main>
+
+
+    
+  </body>
+</html>
