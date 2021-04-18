@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color:#E7E7E7;
+  color: #4b4b4b;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.topo {
+  margin-bottom: -15px;
+  margin-left: -2px;
+  width: 100%;
+}
+
+.container {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, .2), 0 1px 3px 0 rgba(0, 0, 0, .1);
+  background-color: white;
+  padding-top: 30px;
+  padding: 30px;
+  width: 600px;
+}
+
+.btn-alternativo {
+  background-color: #044471 !important;
+  border-color:#044471 !important;
+  color:white;
+  
+}
+
+.btn-alternativo:hover {
+  color:white;
+}
+
+.btn {
+  border: 0.2mm solid #0d6efd !important;
+  height: 46px;
+}
+
+.floatingInput{
+  color: gray !important;
+}
