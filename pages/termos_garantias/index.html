@@ -4,424 +4,502 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.82.0">
-    <title>Grid Template · Bootstrap v5.0</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/grid/">
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      @font-face {
-          font-family: 'Proxima Nova';
-          font-weight: 300;
-          font-display: swap;
-          font-style: normal;
-          src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.ttf) format("truetype")
-      }
-      @font-face {
-          font-family: 'Proxima Nova';
-          font-weight: 400;
-          font-display: swap;
-          font-style: normal;
-          src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.ttf) format("truetype")
-      }
-      @font-face {
-          font-family: 'Proxima Nova';
-          font-weight: 600;
-          font-display: swap;
-          font-style: normal;
-          src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.ttf) format("truetype")
-      }
-    </style>
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+      <style>
+        @font-face {
+            font-family: 'Proxima Nova';
+            font-weight: 300;
+            font-display: swap;
+            font-style: normal;
+            src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.ttf) format("truetype")
         }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="grid.css" rel="stylesheet">
+        @font-face {
+            font-family: 'Proxima Nova';
+            font-weight: 400;
+            font-display: swap;
+            font-style: normal;
+            src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-regular.ttf) format("truetype")
+        }
+        @font-face {
+            font-family: 'Proxima Nova';
+            font-weight: 600;
+            font-display: swap;
+            font-style: normal;
+            src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff2) format("woff2"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.woff) format("woff"), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-semibold.ttf) format("truetype")
+        }
+
+        #main {
+          background-color:#E7E7E7;
+          color:#212529;
+        }
+        
+        .caixa {
+          background-color:white;
+          border: 1px solid rgba(0, 0, 0, .12);
+          border-radius: 6px;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .12);
+          padding: 20px;
+        }
+        .container {
+          width: 80%;
+        }
+        
+        .sub_caixa {
+          border-bottom: 1px solid #BEBEBE;
+          display: inline-block;
+          margin-top: 10px;
+        }
+        .sub_caixa .titulo {
+          font-weight:600;
+          font-size:x-large;
+        }
+        .sub_caixa .titulo2 {
+          font-weight:600;
+          font-size:x-large;
+        }
+        .sub_caixa .titulo3 {
+          font-weight:600;
+          font-size:x-large;
+        }
+        .sub_caixa .titulo4 {
+          font-weight:600;
+          font-size:x-large;
+        }
+        .sub_caixa .texto {
+          font-weight:300;
+          display: inline-block;
+          font-size:medium;
+        }
+        .sub_caixa .texto2 {
+          font-weight:300;
+          display: inline-block;
+          font-size:small;
+        }
+        .sub_caixa .texto3 {
+          font-weight:300;
+          display: inline-block;
+          font-size:x-small;
+        }
+        
+        .sub_caixa .img {
+          width: 20px;
+        }
+        
+        .outra_caixa {
+          display: inline-block;
+          margin-top: 10px;
+        }
+        
+        .outra_caixa .titulo {
+          border-bottom: 2px solid #666666;
+          font-weight:600;
+          font-size:x-large;
+        }
+        
+        .outra_caixa .texto {
+          margin-top: 10px;
+          font-weight:300;
+          display: inline-block;
+          font-size:medium;
+        }
+        
+        .container2 {
+          width: 100%;
+        }
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+        @media (max-width:1024px) {
+          .box_img_produto {
+            display: none;
+          }
+        }
+      </style>
   </head>
-  <body class="py-4" style="font-family:Proxima Nova!important;">
+  <body class="py-4" >
     
-<main>
-  <div class="container">
-
-    <div class="container" style="text-align:center;padding:40px;">
-      <img src="png/t_garantia.png" >
-    </div>
-    <div class="row mb-2 caixa">
-      <div class="col-md-6 themed-grid-col sub_caixa">
-        
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/telefone.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Celulares</div>
-              <div class="texto">Apple: 1 Año</div>
-              <div class="texto">Otras marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">
-        
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/smart.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Reloj Inteligente</div>
-              <div class="texto">Apple/Garmin: 1 Año</div>
-              <div class="texto">Otras marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">
-        
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/cameras.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo3">Cámaras y Filmadoras</div>
-              <div class="texto2">Canon/Sony: 1 Año</div>
-              <div class="texto2">Otras marcas: 3 Meses</div>
-              <div class="texto2">Flash y Accesorios: 3 meses</div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/pc.png" width="110" />
-            </div>
-            <div class="col" style="text-align:center;">
-              <div class="titulo">Informática</div>
-              <div class="texto3">Memorias DDR, Procesadores, Coolers, Placas madre y VGA, Discos externos e internos, SSD, Monitores, Impresoras, Teclados, Mouse, Gabinetes, Memorias y Pendrives, Modem, Routers:
-                3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/notebook.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Notebooks</div>
-              <div class="texto">Apple: 1 Año</div>
-              <div class="texto">Otras marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/tablet.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Tabletas</div>
-              <div class="texto">Apple: 1 Año</div>
-              <div class="texto">Otras marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/hoby.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Drones</div>
-              <div class="texto">Todas las marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/estabilizador.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Estabilizadores</div>
-              <div class="texto">Todas las marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/games.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Consolas</div>
-              <div class="texto">Todas las marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/tv.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo2">TV y Cine en Casa</div>
-              <div class="texto">Todas las Marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <main id="main" style="font-family:Proxima Nova!important;">
+        <div class="container" style="width:100%;">
       
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/projetor.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Proyectores</div>
-              <div class="texto">Todas las Marcas: 3 Meses</div>
-            </div>
+          <div class="container" style="text-align:center;padding:40px;">
+            <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/t_garantia.png" style="max-width:367px;min-width:150px;width:100%;">
           </div>
-        </div>
-      </div>
+          <div class="row mb-2 caixa">
+            <div class="col-md-6 themed-grid-col sub_caixa">
+              
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/telefone.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top: 10px;text-align:center;width:100%;">
+                    <div class="titulo">Celulares</div>
+                    <div class="texto">Apple: 1 Año</div>
+                    <div class="texto">Otras marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
       
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/receptor.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo3">Reproductores Multimedia</div>
-              <div class="texto2">Apple TV: 1 Año</div>
-              <div class="texto2">Chromecast/ Otras marcas:  3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/speaker.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Speakers</div>
-              <div class="texto">Sony: 1 Año</div>
-              <div class="texto">Otras marcas:  3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/multimidia.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo2">Audio para Autos</div>
-              <div class="texto">Todas las Marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/gps.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">GPS</div>
-              <div class="texto">Todas las marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/bolsas.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo2">Mochilas y Estuches</div>
-              <div class="texto">Case Logic/Thule: 1 Año</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/auricular.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Auriculares</div>
-              <div class="texto">Sony: 1 Año</div>
-              <div class="texto">Otras marcas: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/calculador.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo">Calculadoras</div>
-              <div class="texto">3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-6 themed-grid-col sub_caixa">   
-        <div class="container">
-          <div class="row" style="padding: 5px 0 20px 0;">
-            <div class="col">
-              <img src="png/eletrodomesticos.png" width="110" />
-            </div>
-            <div class="col" style="padding-top: 10px;text-align:center;">
-              <div class="titulo2">Electrónicos Varios</div>
-              <div class="texto2">Gafas RV, Receptores, Barbeadores, Baby Call, Scooters, Azamerica y Accesorios en General: 3 Meses</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col sub_caixa"></div>
-
-      <!--<hr style="margin: 40px 0 40px 0;">-->
-
-      <div class="container" style="text-align:center;padding:40px;">
-        <img src="png/t_politicas.png" width="300" >
-      </div>
-
-      <div class="col-md-6 themed-grid-col outra_caixa">   
-        <div class="container container2">
-          <div class="row">
-            <div class="col" style="padding-top: 10px;text-align:left;">
-              <div class="titulo">Atención: Compras en la Tienda Física</div>
-              <div class="texto">
-                 <p>
-                    Para el uso de la garantía es necesario presentar la factura o la tarjeta de garantía emitida por la empresa en nuestro Servicio Posventa ubicada en Av. Adrian Jara c/ Rgto. Piribebuy - Shopping Hijazi Center - Piso 3
-                  </p>
-                  <ul>
-                    <li>Se recomienda el Testeo de los productos en el sector teste</li>
-                    <li>Los productos están sujetos a revisión por el servicio técnico autorizado de la marca</li>
-                    <li>No se realizan cambios directos.</li>
-                  </ul>
+            <div class="col-md-6 themed-grid-col sub_caixa">
+              
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/smart.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Reloj Inteligente</div>
+                    <div class="texto">Apple/Garmin: 1 Año</div>
+                    <div class="texto">Otras marcas: 3 Meses</div>
+                  </div>
+                </div>
               </div>
+              
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col outra_caixa">   
-        <div class="container container2">
-          <div class="row">
-            <div class="col" style="padding-top: 10px;text-align:left;">
-              <div class="titulo">Atención: Compras en la Tienda Online</div>
-              <div class="texto">
-                 <p>
-                    Cambios de productos dentro de los 5 días de recibida la mercadería. El producto debe estar en perfectas condiciones, con accesorios y empaque originales.
-                  </p>
-                  <p>
-                    En caso de fallas en el producto, el mismo será revisado en nuestro Servicio Posventa para definir el cambio del mismo. Si se confirma el defecto, los costos de envío quedan a nuestro cargo.
-                  </p>
-                  <p>
-                  En los demás casos, los costos de envío quedan a cargo del usuario.
-                  </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col outra_caixa" style="border:0;margin-bottom: -100px;">   
-        <div class="container container2">
-          <div class="row">
-            <div class="col" style="padding-top: 10px;text-align:left;">
-              <div class="titulo">Plazo para retirar el producto reparado</div>
-              <div class="texto">
-                La mercaderia reparada deberá ser retirada en un plazo máximo de 90 días contados desde la fecha de ingreso al Servicio Posventa. En caso que no se retire en el periodo mencionado la empresa se reserva el derecho de descartar tal producto.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 themed-grid-col outra_caixa" style="border:0;margin-bottom: -100px;">   
-        <div class="container container2">
-          <div class="row">
-            <div class="col" style="padding-top: 10px;text-align:left;">
-              <div class="titulo">Plazo para retirar el producto reparado</div>
-              <div class="texto">
-                La mercaderia reparada deberá ser retirada en un plazo máximo de 90 días contados desde la fecha de ingreso al Servicio Posventa. En caso que no se retire en el periodo mencionado la empresa se reserva el derecho de descartar tal producto.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       
-
-      <!--<div class="col-md-4 themed-grid-col">.col-md-4</div>-->
-    </div>
-  </div>
-</main>
+            <div class="col-md-6 themed-grid-col sub_caixa">
+              
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/cameras.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo3">Cámaras y Filmadoras</div>
+                    <div class="texto2">Canon/Sony: 1 Año</div>
+                    <div class="texto2">Otras marcas: 3 Meses</div>
+                    <div class="texto2">Flash y Accesorios: 3 meses</div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/pc.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="text-align:center;width:100%;">
+                    <div class="titulo">Informática</div>
+                    <div class="texto3">Memorias DDR, Procesadores, Coolers, Placas madre y VGA, Discos externos e internos, SSD, Monitores, Impresoras, Teclados, Mouse, Gabinetes, Memorias y Pendrives, Modem, Routers:
+                      3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/notebook.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Notebooks</div>
+                    <div class="texto">Apple: 1 Año</div>
+                    <div class="texto">Otras marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/tablet.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Tabletas</div>
+                    <div class="texto">Apple: 1 Año</div>
+                    <div class="texto">Otras marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/hoby.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Drones</div>
+                    <div class="texto">Todas las marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/estabilizador.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Estabilizadores</div>
+                    <div class="texto">Todas las marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/games.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Consolas</div>
+                    <div class="texto">Todas las marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/tv.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo2">TV y Cine en Casa</div>
+                    <div class="texto">Todas las Marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/projetor.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Proyectores</div>
+                    <div class="texto">Todas las Marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/receptor.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo3">Reproductores Multimedia</div>
+                    <div class="texto2">Apple TV: 1 Año</div>
+                    <div class="texto2">Chromecast/ Otras marcas:  3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/speaker.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Speakers</div>
+                    <div class="texto">Sony: 1 Año</div>
+                    <div class="texto">Otras marcas:  3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/multimidia.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo2">Audio para Autos</div>
+                    <div class="texto">Todas las Marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/gps.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">GPS</div>
+                    <div class="texto">Todas las marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/bolsas.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo2">Mochilas y Estuches</div>
+                    <div class="texto">Case Logic/Thule: 1 Año</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/auricular.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Auriculares</div>
+                    <div class="texto">Sony: 1 Año</div>
+                    <div class="texto">Otras marcas: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col sub_caixa">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/calculador.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo">Calculadoras</div>
+                    <div class="texto">3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      
+            <div class="col-md-6 themed-grid-col sub_caixa" style="border: 0;">   
+              <div class="container">
+                <div class="row" style="padding: 5px 0 20px 0;">
+                  <div class="col-5 box_img_produto">
+                    <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/eletrodomesticos.png" style="width: 85%" />
+                  </div>
+                  <div class="col" style="padding-top:10px;text-align:center;width:100%;">
+                    <div class="titulo2">Electrónicos Varios</div>
+                    <div class="texto2">Gafas RV, Receptores, Barbeadores, Baby Call, Scooters, Azamerica y Accesorios en General: 3 Meses</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-12 themed-grid-col sub_caixa" ></div>
+      
+            <!--<hr style="margin: 40px 0 40px 0;">-->
+      
+            <div class="container" style="text-align:center;padding:40px;">
+              <img src="https://agenciamagrela.com/img/comprarapida/termos_garantias/t_politicas.png" style="max-width:300px;min-width:130px;width:100%" >
+            </div>
+      
+            <div class="col-md-6 themed-grid-col outra_caixa">   
+              <div class="container container2">
+                <div class="row">
+                  <div class="col" style="padding-top: 10px;text-align:left;">
+                    <div class="titulo">Atención: Compras en la Tienda Física</div>
+                    <div class="texto">
+                       <p>
+                          Para el uso de la garantía es necesario presentar la factura o la tarjeta de garantía emitida por la empresa en nuestro Servicio Posventa ubicada en Av. Adrian Jara c/ Rgto. Piribebuy - Shopping Hijazi Center - Piso 3
+                        </p>
+                        <ul>
+                          <li>Se recomienda el Testeo de los productos en el sector teste</li>
+                          <li>Los productos están sujetos a revisión por el servicio técnico autorizado de la marca</li>
+                          <li>No se realizan cambios directos.</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col outra_caixa">   
+              <div class="container container2">
+                <div class="row">
+                  <div class="col" style="padding-top: 10px;text-align:left;">
+                    <div class="titulo">Atención: Compras en la Tienda Online</div>
+                    <div class="texto">
+                       <p>
+                          Cambios de productos dentro de los 5 días de recibida la mercadería. El producto debe estar en perfectas condiciones, con accesorios y empaque originales.
+                        </p>
+                        <p>
+                          En caso de fallas en el producto, el mismo será revisado en nuestro Servicio Posventa para definir el cambio del mismo. Si se confirma el defecto, los costos de envío quedan a nuestro cargo.
+                        </p>
+                        <p>
+                        En los demás casos, los costos de envío quedan a cargo del usuario.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col outra_caixa" style="border:0;">   
+              <div class="container container2">
+                <div class="row">
+                  <div class="col" style="padding-top: 10px;text-align:left;">
+                    <div class="titulo">Plazo para retirar el producto reparado</div>
+                    <div class="texto">
+                      La mercaderia reparada deberá ser retirada en un plazo máximo de 90 días contados desde la fecha de ingreso al Servicio Posventa. En caso que no se retire en el periodo mencionado la empresa se reserva el derecho de descartar tal producto.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 themed-grid-col outra_caixa" style="border:0;">   
+              <div class="container container2">
+                <div class="row">
+                  <div class="col" style="padding-top:10px;padding-bottom:20px;text-align:left;">
+                    <div class="titulo">Plazo para retirar el producto reparado</div>
+                    <div class="texto">
+                      La mercaderia reparada deberá ser retirada en un plazo máximo de 90 días contados desde la fecha de ingreso al Servicio Posventa. En caso que no se retire en el periodo mencionado la empresa se reserva el derecho de descartar tal producto.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+      
+            <!--<div class="col-md-4 themed-grid-col">.col-md-4</div>-->
+          </div>
+        </div>
+      </main>
 
 
     
